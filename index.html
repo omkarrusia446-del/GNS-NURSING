@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GNS Medical | Premium Healthcare at Home</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+
+<body>
+
+  <nav class="navbar">
+    <div class="logo">
+      <i class="ph-fill ph-heartbeat"></i>
+      GNS Medical
+    </div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="#services">Services</a>
+      <a id="nav-login" href="login.html" class="nav-btn">Sign In</a>
+      <a id="nav-logout" href="#" class="nav-btn hidden" onclick="logout()">Sign Out</a>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="hero-content">
+      <span class="hero-sub">Trust & Professionalism</span>
+      <h1>Care you can trust, right at your doorstep.</h1>
+      <p>Experience the highest standard of at-home healthcare. We provide verified, exceptionally trained professionals for every stage of care and recovery.</p>
+      <div style="display: flex; gap: 16px; margin-top: 20px;">
+        <button class="btn-primary" onclick="window.location.href='login.html'">Book a Caretaker <i class="ph-bold ph-arrow-right"></i></button>
+        <button class="btn-outline">Learn More</button>
+      </div>
+    </div>
+    <div class="hero-image-wrapper">
+      <!-- High quality placeholder mimicking a premium medical environment -->
+      <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Medical Professional" class="hero-img">
+    </div>
+  </header>
+
+  <section id="services" class="section-wrapper">
+    <div class="section-head">
+      <h2>Comprehensive Services</h2>
+      <p style="color: var(--text-muted); font-size: 1.1rem;">Tailored professional support for your unique health needs.</p>
+    </div>
+    
+    <div class="cards-grid">
+      <div class="service-card">
+        <i class="ph-duotone ph-users-three service-icon"></i>
+        <h3>Elderly Care</h3>
+        <p>Compassionate, round-the-clock physical support and companionship ensuring dignity and comfort for senior residents.</p>
+      </div>
+
+      <div class="service-card">
+        <i class="ph-duotone ph-bandaids service-icon"></i>
+        <h3>Post Surgery Care</h3>
+        <p>Vigilant medical monitoring and strict recovery protocols administered directly in the sanctuary of your home.</p>
+      </div>
+
+      <div class="service-card">
+        <i class="ph-duotone ph-wheelchair service-icon"></i>
+        <h3>Disability Support</h3>
+        <p>Empathetic special needs support prioritizing mobility assistance, occupational therapy adherence, and independence.</p>
+      </div>
+
+      <div class="service-card">
+        <i class="ph-duotone ph-baby service-icon"></i>
+        <h3>Child Care</h3>
+        <p>Nurturing and highly reliable pediatric supervision tailored for infants and children with specialized focus.</p>
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', checkAuthOnIndex);
+  </script>
+</body>
+
+</html>
